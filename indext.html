@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Game</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>  
+</head>
+<body>
+    <div class="container">
+        <h2>Calculation Game By Sonu </h2>
+        
+        <label>Enter number range:</label>
+        <div class="input-group">
+            <input type="number" id="min" placeholder="Min" required>
+            <input type="number" id="max" placeholder="Max" required>
+        </div>
+        <button class="btn" onclick="startGame()">Start Game</button>
+
+        <div id="question" style="display:none;">
+            <p id="mathQuestion"></p>
+            <input type="number" id="userAnswer" placeholder="Your Answer">
+            <button class="btn" onclick="checkAnswer()">Submit</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
